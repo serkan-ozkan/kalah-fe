@@ -7,8 +7,8 @@ class GameService{
         return axios.get(GAME_API_BASE_URL);
     }
 
-    play(index, board){
-        return axios.put(GAME_API_BASE_URL + 'play', {pitIndex : index, currentBoard: board});
+    play(index){
+        return axios.put(GAME_API_BASE_URL + 'play/' + index);
     }
 
 }
